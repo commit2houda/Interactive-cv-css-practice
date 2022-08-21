@@ -84,13 +84,14 @@ section #first-section .contact .contact-content {
 #first-section .contact .contact-content a {
   text-decoration: none;
   color: white;
+  
 }
 
 #first-section .contact .contact-content a:hover {
   
-  color: lightgray;
-  font-weight: bolder;
-  transition: all 0.3s ease-in-out;
+ color: #fed3cb;
+ font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 

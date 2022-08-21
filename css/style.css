@@ -12,6 +12,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  
 }
 
 /*  just fixing sections and the colors of the backgrounds  */
@@ -31,7 +32,12 @@ section {
   background: linear-gradient(to right, #536ff9, #fed3cb);
   /* padding-left: 30px; */
   transform: scale(1);
-  transition-duration:0.3s ;
+	transition: transform 1s ; 
+}
+
+section:hover {
+	transform: scale(1.03);
+transition: transform 0.7s;
 }
 
 section #first-section {

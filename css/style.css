@@ -30,6 +30,8 @@ section {
   position: relative;
   background: linear-gradient(to right, #536ff9, #fed3cb);
   /* padding-left: 30px; */
+  transform: scale(1);
+  transition-duration:0.3s ;
 }
 
 section #first-section {
@@ -55,7 +57,7 @@ section #second-section {
 /*  contact */
 section #first-section .contact {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -63,7 +65,7 @@ section #first-section .contact {
 }
 section #first-section .contact .contact-content {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: center;
   gap: 19px;

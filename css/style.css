@@ -145,7 +145,7 @@ section #first-section #bigtitle {
 
 #first-section .Langue .lang {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   gap: 25px;

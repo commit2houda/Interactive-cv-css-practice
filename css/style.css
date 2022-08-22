@@ -1,10 +1,10 @@
 @font-face {
   font-family: "sans open";
-  src: url(../fonts/OpenSans/OpenSans-Regular.ttf) ; 
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family:"sans open bold" ;
+  font-family: "sans open bold";
   src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
 }
 
@@ -17,7 +17,6 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  
 }
 
 /*  just fixing sections and the colors of the backgrounds  */
@@ -37,12 +36,12 @@ section {
   background: linear-gradient(to right, #536ff9, #fed3cb);
   /* padding-left: 30px; */
   transform: scale(1);
-	transition: transform 1s ; 
+  transition: transform 1s;
 }
 
 section:hover {
-	transform: scale(1.03);
-transition: transform 0.7s;
+  transform: scale(1.03);
+  transition: transform 0.7s;
 }
 
 section #first-section {
@@ -68,32 +67,40 @@ section #second-section {
 /*  contact */
 section #first-section .contact {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   gap: 10px;
   padding: 10px 30px;
 }
+
 section #first-section .contact .contact-content {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: center;
   gap: 19px;
+  transform: scale(1);
+  transition: transform 1s;
 }
+
+
+section #first-section .contact .contact-content:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+
 #first-section .contact .contact-content a {
   text-decoration: none;
   color: white;
-  
 }
 
 #first-section .contact .contact-content a:hover {
-  
- color: #fed3cb;
- font-weight: 700;
+  color: #fed3cb;
+  font-weight: 700;
   transition: all 0.3s ease;
 }
-
 
 #first-section .contact .contact-content i {
   height: 40px;
@@ -129,6 +136,13 @@ section #first-section #bigtitle {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+#first-section .Formation :hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 #first-section .content {
@@ -161,6 +175,13 @@ section #first-section #bigtitle {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+#first-section .Langue .lang:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 #first-section .Langue .lang .lang-name {
@@ -247,7 +268,15 @@ section #first-section #bigtitle {
   justify-content: center;
   align-items: center;
   color: #536ff9;
+  transform: scale(1);
+  transition: transform 1s;
 }
+
+/* #first-section .interests .first-row .interest i:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s;
+} */
+
 #first-section .interests .second-row {
   display: flex;
   gap: 30px;
@@ -263,6 +292,8 @@ section #first-section #bigtitle {
   justify-content: center;
   align-items: center;
   color: #536ff9;
+  transform: scale(1);
+  transition: transform 1s;
 }
 
 #first-section .interests .first-row .interest i:hover {
@@ -270,6 +301,8 @@ section #first-section #bigtitle {
   color: #fed3cb;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 #first-section .interests .second-row .interest i:hover {
@@ -277,6 +310,8 @@ section #first-section #bigtitle {
   color: #fed3cb;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 /* second section  */
@@ -298,7 +333,7 @@ section #first-section #bigtitle {
   color: #000000;
   /* font-style: italic; */
   font-size: 2.5em;
-  font-family:"sans open bold"
+  font-family: "sans open bold";
 }
 
 #second-section .name h3 {
@@ -312,7 +347,7 @@ section #first-section #bigtitle {
   padding: 5px 0px;
   background-color: #536ff9;
   border-top-right-radius: 30px;
-  border-bottom-left-radius:30px ;
+  border-bottom-left-radius: 30px;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -321,7 +356,17 @@ section #first-section #bigtitle {
 
 #second-section .me {
   padding: 10px 30px;
+  transform: scale(1);
+  transition: transform 1s;
 }
+
+
+#second-section .me:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  /* box-shadow: 1px 2px 60px lightgray; */
+}
+
 #second-section .me h2 {
   letter-spacing: 2px;
   font-weight: bolder;
@@ -354,6 +399,14 @@ section #second-section #bigtitle {
 
 section #second-section .skills {
   padding: 10px 30px;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+
+section #second-section .skills:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 section #second-section .info {
   display: flex;
@@ -420,6 +473,14 @@ section #second-section .info .skill-name::before {
   justify-content: start;
   align-items: center;
   padding: 10px 5px;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+
+#second-section .software .software-skill:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 #second-section .software .software-icon {
@@ -465,7 +526,15 @@ section #second-section .info .skill-name::before {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  transform: scale(1);
+  transition: transform 1s;
 }
+
+#second-section .social-media:hover {
+  transform: scale(1.03);
+  transition: transform 0.7s;
+}
+
 
 #second-section .social-media p {
   font-size: 0.9em;
@@ -479,12 +548,12 @@ section #second-section .info .skill-name::before {
   color: #000000;
 }
 
-#second-section .social-media a:hover{ 
+#second-section .social-media a:hover {
   color: #fed3cb;
   transition: all 0.3s ease-in-out;
 }
 
- /* profile pic */
+/* profile pic */
 
 #bighex {
   position: relative;
@@ -492,26 +561,21 @@ section #second-section .info .skill-name::before {
   height: 200px;
   background-color: #ffffff;
   border-radius: 50%;
-margin:10px auto;
-overflow: hidden;
+  margin: 10px auto;
+  overflow: hidden;
 }
 
 #bighex::before {
-
-content: "";
-position: absolute;
- inset: -10px  60px ; 
-background: linear-gradient(360deg,#fed3cb, #536ff9 );
-transition: 0.5s;
-animation: border 3s linear infinite;
-
-
+  content: "";
+  position: absolute;
+  inset: -10px 60px;
+  background: linear-gradient(360deg, #fed3cb, #536ff9);
+  transition: 0.5s;
+  animation: border 3s linear infinite;
 }
 
-
-#bighex:hover::before{
-inset: 0px 0px;
-
+#bighex:hover::before {
+  inset: 0px 0px;
 }
 
 @keyframes border {
@@ -519,28 +583,26 @@ inset: 0px 0px;
     transform: rotate(0deg);
   }
 
-  100%{
+  100% {
     transform: rotate(360deg);
   }
-  
 }
 
-#bighex::after{
+#bighex::after {
   content: "";
   position: absolute;
-   inset: 6px; 
+  inset: 6px;
   background: #ffffff;
   border-radius: 50%;
   z-index: 1;
 }
 
-
 #bighex .image {
   position: absolute;
-   inset: 20px; 
-   border: 6px solid #fed3cb; 
+  inset: 20px;
+  border: 6px solid #fed3cb;
   z-index: 2;
-  border-radius:  50%; 
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -550,4 +612,46 @@ inset: 0px 0px;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  /* main {
+  margin: auto;
+  max-width: 100%;
+} */
+
+  main {
+    padding: 0px 30px;
+  }
+
+  section {
+    /* margin: auto;
+  max-width: 100%; */
+    background: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 20px 60 lightgray;
+  }
+
+  section #first-section {
+    width: 300px;
+  }
+  section #second-section {
+    width: 300px;
+  }
+  /* 
+  #first-section .contact {
+    display: flex;
+    flex-direction: column;
+    
+    /* flex-wrap: wrap; */
+  /* gap: 25px; */
+
+  #first-section .contact .contact-content a {
+    font-size: 0.9em;
+  }
+
+  #second-section .software .software-stars {
+    font-size: 0.7em;
+  }
 }
